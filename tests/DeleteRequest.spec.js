@@ -32,9 +32,9 @@ test('DELETE request', async ({ request }) => {
     expect(getResponse.status()).toBe(200);
     expect(getResponse.ok()).toBeTruthy();
     //Asserting GET response from server
-    expect(getResponseJsonFormate.response.jsonBody.name).toBe("deleteUser")
-    expect(getResponseJsonFormate.response.jsonBody.email).toBe("DeleteUser@example.com")
-    expect(getResponseJsonFormate.response.jsonBody.age).toBe(12);
+    expect(getResponseJsonFormate.response.jsonBody.name).toBe(deleteData.RESPONSE_DATA.jsonBody.name)
+    expect(getResponseJsonFormate.response.jsonBody.email).toBe(deleteData.RESPONSE_DATA.jsonBody.email)
+    expect(getResponseJsonFormate.response.jsonBody.age).toBe(deleteData.RESPONSE_DATA.jsonBody.age);
 
     //Deleting data from the server
     const deleteResponse = await request.delete(process.env.API_POST_URL + "/"+ uuid, {

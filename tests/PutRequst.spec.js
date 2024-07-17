@@ -1,6 +1,6 @@
 const { test, expect } = require("@playwright/test");
 require("dotenv").config();
-const data = require("../data/putData.json");
+const putData = require("../data/putData.json");
 import { constructPayload } from "../utils/utils";
 
 /*
@@ -8,6 +8,7 @@ import { constructPayload } from "../utils/utils";
     1. POST data into server
     2. using PUT method make some changes to the data
     3. GET response and validate
+    4. assert server response
 */
 
 test('PUT request to API endpoint', async ({ request }) => {
@@ -16,7 +17,7 @@ test('PUT request to API endpoint', async ({ request }) => {
         headers: {
             'Content-Type': 'application/json'
         },
-        data: constructPayload(data.REQUEST_DATA, data.RESPONSE_DATA)
+        data: constructPayload(putData.REQUEST_DATA, putData.RESPONSE_DATA)
     });
 
     // Assert post response status
@@ -32,7 +33,7 @@ test('PUT request to API endpoint', async ({ request }) => {
         headers: {
             'Content-Type': 'application/json'
         },
-        data: constructPayload(data.REQUEST_DATA, data.RESPONSE_DATA)
+        data: constructPayload(putData.REQUEST_DATA, putData.RESPONSE_DATA)
     });
 
     // Assert put response status
@@ -48,8 +49,8 @@ test('PUT request to API endpoint', async ({ request }) => {
     const finalResponse = await getResponse.json();
 
     // Adjust assertions based on actual structure of finalResponse
-    expect(finalResponse.response.jsonBody.name).toBe("jhon");
-    expect(finalResponse.response.jsonBody.email).toBe("jhon@example.com");
-    expect(finalResponse.response.jsonBody.age).toBe(250);
-    expect(finalResponse.response.jsonBody.phone).toBe("1234567890");
+    expect(finalResponse.response.jsonBody.name).toBe(putData.RESPONSE_DATA.jsonBody.name);
+    expect(finalResponse.response.jsonBody.email).toBe(putData.RESPONSE_DATA.jsonBody.email);
+    expect(finalResponse.response.jsonBody.age).toBe(putData.RESPONSE_DATA.jsonBody.age);
+    expect(finalResponse.response.jsonBody.phone).toBe(putData.RESPONSE_DATA.jsonBody.phone);
 });

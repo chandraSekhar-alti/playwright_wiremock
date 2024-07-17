@@ -1,0 +1,21 @@
+{
+  "id" : "7e9a858e-5247-481d-ac51-fc0331772289",
+  "request" : {
+    "url" : "/api/users/1",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "jsonBody" : {
+      "id" : 1,
+      "name" : "jhon",
+      "email" : "jhon@example.com",
+      "age" : 250,
+      "address" : "123 india",
+      "phone" : "555-1234"
+    }
+  },
+  "uuid" : "7e9a858e-5247-481d-ac51-fc0331772289",
+  "persistent" : true,
+  "insertionIndex" : 2
+}

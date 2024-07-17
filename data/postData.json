@@ -1,0 +1,17 @@
+{
+    "REQUEST_DATA": {
+      "method": "GET",
+      "url": "/api/users/8"
+    },
+    "RESPONSE_DATA": {
+      "status": 200,
+      "jsonBody": {
+        "id": 8,
+        "name": "jhon",
+        "email": "jhon@example.com",
+        "age": 250,
+        "address": "123 india",
+        "phone": "555-1234"
+    }
+    }
+  }

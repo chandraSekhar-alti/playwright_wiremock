@@ -1,0 +1,27 @@
+{
+  "name": "wiremock_node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "runTests":"npx playwright test",
+    "start-server": "java -jar wiremock-standalone-3.8.0.jar --port 9999 --root-dir wireMock --https-port 2424 --local-response-templating",
+    "stop-server": "taskkill /f /pid $(netstat -aon | findstr :9999 | awk '{print $5}' | head -n 1)",
+    "generatereports":"npx allure serve allure-results"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.45.1",
+    "@types/node": "^20.14.10",
+    "allure-commandline": "^2.29.0",
+    "allure-playwright": "^3.0.0-beta.6",
+    "wiremock": "^3.8.0",
+    "wiremock-standalone": "^3.2.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "wiremock-captain": "^3.3.1"
+  }
+}

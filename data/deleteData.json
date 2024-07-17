@@ -1,0 +1,17 @@
+{
+    "REQUEST_DATA": {
+      "method": "GET",
+      "url": "/api/users/15"
+    },
+    "RESPONSE_DATA": {
+      "status": 200,
+      "jsonBody": {
+        "id": 8,
+        "name": "deleteUser",
+        "email": "DeleteUser@example.com",
+        "age": 12,
+        "address": "UAS",
+        "phone": "000-000"
+    }
+    }
+}

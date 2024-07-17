@@ -1,0 +1,17 @@
+{
+  "id" : "ff659688-6054-4fc6-aae7-fbbdb07a0ad5",
+  "request" : {
+    "url" : "/api/users/2",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "Users/user2.json",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "ff659688-6054-4fc6-aae7-fbbdb07a0ad5",
+  "persistent" : true,
+  "insertionIndex" : 3
+}

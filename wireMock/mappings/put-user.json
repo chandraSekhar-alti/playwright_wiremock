@@ -1,0 +1,32 @@
+{
+  "id" : "794105c0-076c-47df-8991-254b4d4d80e6",
+  "request" : {
+    "urlPattern" : "/api/users/([0-9]+)",
+    "method" : "PUT",
+    "bodyPatterns" : [ {
+      "matchesJsonPath" : "$.firstname"
+    }, {
+      "matchesJsonPath" : "$.lastname"
+    }, {
+      "matchesJsonPath" : "$.totalprice"
+    }, {
+      "matchesJsonPath" : "$.depositpaid"
+    }, {
+      "matchesJsonPath" : "$.bookingdates.checkin"
+    }, {
+      "matchesJsonPath" : "$.bookingdates.checkout"
+    }, {
+      "matchesJsonPath" : "$.additionalneeds"
+    } ]
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "User with ID {{request.pathSegments.[2]}} updated successfully.",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "794105c0-076c-47df-8991-254b4d4d80e6",
+  "persistent" : true,
+  "insertionIndex" : 1
+}

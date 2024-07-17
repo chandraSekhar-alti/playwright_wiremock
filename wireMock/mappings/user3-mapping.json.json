@@ -1,0 +1,17 @@
+{
+  "id" : "ed42c13f-00a8-4509-9328-75ccbf238dee",
+  "request" : {
+    "url" : "/api/users/3",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "Users/user3.json",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "ed42c13f-00a8-4509-9328-75ccbf238dee",
+  "persistent" : true,
+  "insertionIndex" : 4
+}

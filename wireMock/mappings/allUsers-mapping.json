@@ -1,0 +1,100 @@
+{
+  "id" : "99d24157-b57b-46d7-b526-eb8872393f60",
+  "request" : {
+    "url" : "/api/users",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "jsonBody" : {
+      "users" : [ {
+        "id" : 1,
+        "name" : "John Doe",
+        "email" : "johndoe@example.com",
+        "age" : 30,
+        "address" : "123 Elm Street",
+        "phone" : "555-1234"
+      }, {
+        "id" : 2,
+        "name" : "John Smith",
+        "email" : "johnsmith@example.com",
+        "age" : 25,
+        "address" : "456 Oak Street",
+        "phone" : "555-5678"
+      }, {
+        "id" : 3,
+        "name" : "Alice Johnson",
+        "email" : "alicejohnson@example.com",
+        "age" : 28,
+        "address" : "789 Pine Street",
+        "phone" : "555-8765"
+      }, {
+        "id" : 4,
+        "name" : "Bob Brown",
+        "email" : "bobbrown@example.com",
+        "age" : 35,
+        "address" : "101 Maple Avenue",
+        "phone" : "555-3456"
+      }, {
+        "id" : 5,
+        "name" : "Charlie Davis",
+        "email" : "charliedavis@example.com",
+        "age" : 32,
+        "address" : "202 Birch Lane",
+        "phone" : "555-7890"
+      }, {
+        "id" : 6,
+        "name" : "David Evans",
+        "email" : "davidevans@example.com",
+        "age" : 40,
+        "address" : "303 Cedar Road",
+        "phone" : "555-2345"
+      }, {
+        "id" : 7,
+        "name" : "Eva Green",
+        "email" : "evagreen@example.com",
+        "age" : 22,
+        "address" : "404 Spruce Street",
+        "phone" : "555-6543"
+      }, {
+        "id" : 8,
+        "name" : "Frank Harris",
+        "email" : "frankharris@example.com",
+        "age" : 27,
+        "address" : "505 Willow Drive",
+        "phone" : "555-9876"
+      }, {
+        "id" : 9,
+        "name" : "Grace Johnson",
+        "email" : "gracejohnson@example.com",
+        "age" : 29,
+        "address" : "606 Redwood Street",
+        "phone" : "555-3210"
+      }, {
+        "id" : 10,
+        "name" : "Henry King",
+        "email" : "henryking@example.com",
+        "age" : 34,
+        "address" : "707 Chestnut Lane",
+        "phone" : "555-6542"
+      }, {
+        "id" : 11,
+        "name" : "Isla Martin",
+        "email" : "islamartin@example.com",
+        "age" : 26,
+        "address" : "808 Aspen Court",
+        "phone" : "555-4321"
+      }, {
+        "id" : 12,
+        "name" : "Jack Nelson",
+        "email" : "jacknelson@example.com",
+        "age" : 31,
+        "address" : "909 Hickory Street",
+        "phone" : "555-7654"
+      } ]
+    }
+  },
+  "uuid" : "99d24157-b57b-46d7-b526-eb8872393f60",
+  "persistent" : true,
+  "insertionIndex" : 0
+}
